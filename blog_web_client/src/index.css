@@ -18,3 +18,10 @@ body {
   color: white;
 }
 
+
+.form-container{
+  border: 2px dashed darkgray;
+  margin: 80px auto;
+  max-width: 700px;
+  padding: 10px;
+}

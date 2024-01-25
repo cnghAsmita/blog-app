@@ -11,6 +11,9 @@
     letter-spacing: 0.2rem;
     padding: 5px 10px;
     margin: 2px;
-    width: 90px;
+    width: 125px;
     border-right: 6px solid orange;
+    color: black;
+    text-shadow: 4px 3px 4px;
+    text-decoration: none;
   }

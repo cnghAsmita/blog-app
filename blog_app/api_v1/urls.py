@@ -10,7 +10,7 @@ router = DefaultRouter(trailing_slash=True)
 
 urlpatterns = [
     path('auth/login', LoginView.as_view(), name='user-views'),
-    path('register/', UserCreateAPIView.as_view(), name='user-register'),
+    path('auth/register', UserCreateAPIView.as_view(), name='user-register'),
     path('user', UserRetrieveUpdateDestroyAPIView.as_view(), name='user-rud'),
 
     path("", include(router.urls))
