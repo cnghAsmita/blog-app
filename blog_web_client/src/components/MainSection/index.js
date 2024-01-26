@@ -1,11 +1,16 @@
-import RegisterForm from "../forms/RegisterForm";
+import AddPost from "../Post/AddPost";
+import AllPost from "../Posts";
 
 
-const MainSection = () =>{
+const MainSection = ({activeKey}) =>{
+    const componentByActiveKey = {
+        'allPost': <AllPost />,
+        'addPost': <AddPost />
+    }
 
     return (
         <>
-            <RegisterForm />
+            {componentByActiveKey[activeKey]}
         </>
     );
 }
